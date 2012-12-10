@@ -20,6 +20,16 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // this sets up the app to support landscape only
+    if ((interfaceOrientation == UIInterfaceOrientationLandscapeLeft) | (interfaceOrientation == UIInterfaceOrientationLandscapeRight))
+    {
+        return YES;
+    }
+    return NO;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

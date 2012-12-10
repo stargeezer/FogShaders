@@ -18,6 +18,13 @@
 		E70CB85C16701FA7002E9671 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E70CB85B16701FA7002E9671 /* Default-568h@2x.png */; };
 		E70CB85F16701FA7002E9671 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70CB85D16701FA7002E9671 /* MainStoryboard.storyboard */; };
 		E70CB86216701FA7002E9671 /* FGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E70CB86116701FA7002E9671 /* FGViewController.m */; };
+		E70CB8701670210C002E9671 /* FGView.m in Sources */ = {isa = PBXBuildFile; fileRef = E70CB86F1670210C002E9671 /* FGView.m */; };
+		E70CB872167021C2002E9671 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70CB871167021C2002E9671 /* OpenGLES.framework */; };
+		E70CB8741670221A002E9671 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70CB8731670221A002E9671 /* QuartzCore.framework */; };
+		E70CB87616705DE3002E9671 /* Vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = E70CB87516705DE3002E9671 /* Vertex.glsl */; };
+		E70CB87816705DF6002E9671 /* Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = E70CB87716705DF6002E9671 /* Fragment.glsl */; };
+		E70CB888167557D8002E9671 /* interiorTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = E70CB887167557D8002E9671 /* interiorTexture.png */; };
+		E7E22C211676552D000EB82B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E7E22C201676552D000EB82B /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,14 @@
 		E70CB85E16701FA7002E9671 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E70CB86016701FA7002E9671 /* FGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGViewController.h; sourceTree = "<group>"; };
 		E70CB86116701FA7002E9671 /* FGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGViewController.m; sourceTree = "<group>"; };
+		E70CB86E1670210C002E9671 /* FGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGView.h; sourceTree = "<group>"; };
+		E70CB86F1670210C002E9671 /* FGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGView.m; sourceTree = "<group>"; };
+		E70CB871167021C2002E9671 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E70CB8731670221A002E9671 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E70CB87516705DE3002E9671 /* Vertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = Vertex.glsl; sourceTree = "<group>"; };
+		E70CB87716705DF6002E9671 /* Fragment.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = Fragment.glsl; sourceTree = "<group>"; };
+		E70CB887167557D8002E9671 /* interiorTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = interiorTexture.png; path = ../../../../Dropbox/aaProjects/interiorTexture.png; sourceTree = "<group>"; };
+		E7E22C201676552D000EB82B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70CB8741670221A002E9671 /* QuartzCore.framework in Frameworks */,
+				E70CB872167021C2002E9671 /* OpenGLES.framework in Frameworks */,
 				E70CB84616701FA7002E9671 /* UIKit.framework in Frameworks */,
 				E70CB84816701FA7002E9671 /* Foundation.framework in Frameworks */,
 				E70CB84A16701FA7002E9671 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +90,8 @@
 		E70CB84416701FA7002E9671 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E70CB8731670221A002E9671 /* QuartzCore.framework */,
+				E70CB871167021C2002E9671 /* OpenGLES.framework */,
 				E70CB84516701FA7002E9671 /* UIKit.framework */,
 				E70CB84716701FA7002E9671 /* Foundation.framework */,
 				E70CB84916701FA7002E9671 /* CoreGraphics.framework */,
@@ -83,6 +102,9 @@
 		E70CB84B16701FA7002E9671 /* FogShaders */ = {
 			isa = PBXGroup;
 			children = (
+				E70CB86A16702085002E9671 /* views */,
+				E70CB8691670205B002E9671 /* textures */,
+				E70CB86816702019002E9671 /* shaders */,
 				E70CB85416701FA7002E9671 /* FGAppDelegate.h */,
 				E70CB85516701FA7002E9671 /* FGAppDelegate.m */,
 				E70CB85D16701FA7002E9671 /* MainStoryboard.storyboard */,
@@ -103,8 +125,35 @@
 				E70CB85716701FA7002E9671 /* Default.png */,
 				E70CB85916701FA7002E9671 /* Default@2x.png */,
 				E70CB85B16701FA7002E9671 /* Default-568h@2x.png */,
+				E7E22C201676552D000EB82B /* README.txt */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E70CB86816702019002E9671 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				E70CB87516705DE3002E9671 /* Vertex.glsl */,
+				E70CB87716705DF6002E9671 /* Fragment.glsl */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		E70CB8691670205B002E9671 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				E70CB887167557D8002E9671 /* interiorTexture.png */,
+			);
+			name = textures;
+			sourceTree = "<group>";
+		};
+		E70CB86A16702085002E9671 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E70CB86E1670210C002E9671 /* FGView.h */,
+				E70CB86F1670210C002E9671 /* FGView.m */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +213,10 @@
 				E70CB85A16701FA7002E9671 /* Default@2x.png in Resources */,
 				E70CB85C16701FA7002E9671 /* Default-568h@2x.png in Resources */,
 				E70CB85F16701FA7002E9671 /* MainStoryboard.storyboard in Resources */,
+				E70CB87616705DE3002E9671 /* Vertex.glsl in Resources */,
+				E70CB87816705DF6002E9671 /* Fragment.glsl in Resources */,
+				E70CB888167557D8002E9671 /* interiorTexture.png in Resources */,
+				E7E22C211676552D000EB82B /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +230,7 @@
 				E70CB85216701FA7002E9671 /* main.m in Sources */,
 				E70CB85616701FA7002E9671 /* FGAppDelegate.m in Sources */,
 				E70CB86216701FA7002E9671 /* FGViewController.m in Sources */,
+				E70CB8701670210C002E9671 /* FGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +346,7 @@
 				E70CB86716701FA7002E9671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
